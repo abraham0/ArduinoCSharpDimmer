@@ -56,6 +56,7 @@ namespace Arduino_Dimmer
                 byte[] buffer = new byte[1];
                 buffer[0] = (byte)tbBrightness.Value;
                 _arduinoPort.Write(buffer, 0, 1);
+                brightness_label.Text = buffer[0].ToString(); 
             }
         }
 

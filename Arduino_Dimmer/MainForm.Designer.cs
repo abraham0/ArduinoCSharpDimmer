@@ -37,6 +37,7 @@
             this.lbHelp = new System.Windows.Forms.Label();
             this.lbCopyright = new System.Windows.Forms.Label();
             this.lbBrightness = new System.Windows.Forms.Label();
+            this.brightness_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tbBrightness)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,11 +130,21 @@
             this.lbBrightness.TabIndex = 8;
             this.lbBrightness.Text = "Brightness:";
             // 
+            // brightness_label
+            // 
+            this.brightness_label.AutoSize = true;
+            this.brightness_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brightness_label.Location = new System.Drawing.Point(198, 122);
+            this.brightness_label.Name = "brightness_label";
+            this.brightness_label.Size = new System.Drawing.Size(0, 16);
+            this.brightness_label.TabIndex = 9;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 235);
+            this.Controls.Add(this.brightness_label);
             this.Controls.Add(this.lbBrightness);
             this.Controls.Add(this.lbCopyright);
             this.Controls.Add(this.lbHelp);
@@ -163,7 +174,7 @@
         private System.Windows.Forms.Label lbHelp;
         private System.Windows.Forms.Label lbCopyright;
         private System.Windows.Forms.Label lbBrightness;
-
+        private System.Windows.Forms.Label brightness_label;
     }
 }
 
